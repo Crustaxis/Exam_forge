@@ -7,6 +7,7 @@ import { Loading, NotFound, Page } from '../components/Layout';
 import { QuestionView } from '../components/QuestionView';
 import { startExam } from '../app/startExam';
 import { formatDuration, formatNumber } from '../lib/format';
+import { attemptTimeSpent } from '../domain/exam';
 import type { AttemptItem } from '../domain/types';
 
 type Filter = 'all' | 'wrong' | 'blank' | 'flagged';
@@ -30,7 +31,7 @@ export function ResultPage() {
 
   const r = attempt.result;
   const back = `/p/${attempt.projectId}?tab=historial`;
-  const duration = attempt.finishedAt - attempt.startedAt;
+  const duration = attemptTimeSpent(attempt);
   const items = attempt.items.filter((i) =>
     filter === 'wrong' ? isWrong(i) : filter === 'blank' ? i.answerOptionId === null : filter === 'flagged' ? i.flagged : true,
   );

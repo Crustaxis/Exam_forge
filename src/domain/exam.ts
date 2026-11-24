@@ -169,6 +169,15 @@ export function addTimeSpent(attempt: Attempt, index: number, ms: number): Attem
   return { ...attempt, items };
 }
 
+/**
+ * Tiempo real dedicado a un intento: la suma del tiempo de cada pregunta.
+ * No usa `finishedAt - startedAt` porque eso contaría también el tiempo con la app cerrada
+ * (si dejas un examen a medias y lo terminas al día siguiente, saldrían 24 h).
+ */
+export function attemptTimeSpent(attempt: Pick<Attempt, 'items'>): number {
+  return attempt.items.reduce((total, item) => total + item.timeSpentMs, 0);
+}
+
 export function finishAttempt(attempt: Attempt, now: number = Date.now()): Attempt {
   if (attempt.finishedAt !== null) return attempt;
   return {

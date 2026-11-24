@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import {
+  addTimeSpent,
   answerItem,
+  attemptTimeSpent,
   buildAttempt,
   finishAttempt,
   pickQuestions,
@@ -96,5 +98,28 @@ describe('answerItem / finishAttempt', () => {
     expect(attempt.result).toMatchObject({ correct: 1, blank: 1 });
     const after = answerItem(attempt, 1, attempt.items[1]!.correctOptionId);
     expect(after.items[1]!.answerOptionId).toBeNull();
+  });
+});
+
+describe('attemptTimeSpent', () => {
+  it('suma el tiempo de cada pregunta', () => {
+    let attempt = buildAttempt(practiceTemplate('p1', [], 3), bank, { rng: seededRng(7) });
+    attempt = addTimeSpent(attempt, 0, 30_000);
+    attempt = addTimeSpent(attempt, 1, 45_000);
+    attempt = addTimeSpent(attempt, 0, 15_000);
+    expect(attemptTimeSpent(attempt)).toBe(90_000);
+  });
+
+  it('no cuenta el tiempo con la app cerrada', () => {
+    let attempt = buildAttempt(practiceTemplate('p1', [], 2), bank, { rng: seededRng(8) });
+    attempt = addTimeSpent(attempt, 0, 60_000);
+    // Se termina un día después de empezar, pero solo se dedicó 1 minuto.
+    attempt = finishAttempt({ ...attempt, startedAt: 0 }, 24 * 60 * 60_000);
+    expect(attemptTimeSpent(attempt)).toBe(60_000);
+  });
+
+  it('es 0 si no se ha dedicado tiempo', () => {
+    const attempt = buildAttempt(practiceTemplate('p1', [], 2), bank, { rng: seededRng(9) });
+    expect(attemptTimeSpent(attempt)).toBe(0);
   });
 });
