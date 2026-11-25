@@ -1,0 +1,46 @@
+{
+  "format": "tailor-test/questions",
+  "version": 1,
+  "questions": [
+    {
+      "question": "Si 3 kg de manzanas cuestan 12 €, ¿cuánto cuestan 5 kg?",
+      "options": ["18 €", "20 €", "24 €", "15 €"],
+      "answer": 1,
+      "explanation": "12 / 3 = 4 €/kg → 5 × 4 = 20 €.",
+      "difficulty": 1,
+      "tags": ["proporciones"]
+    },
+    {
+      "question": "Un producto de 80 € sube un 25 %. ¿Cuál es el nuevo precio?",
+      "options": ["95 €", "100 €", "105 €", "120 €"],
+      "answer": 1,
+      "explanation": "80 × 1,25 = 100 €.",
+      "difficulty": 1,
+      "tags": ["porcentajes"]
+    },
+    {
+      "question": "Un precio baja un 20 % y después sube un 20 %. Respecto al precio inicial, el precio final es…",
+      "options": ["Igual", "Un 4 % menor", "Un 4 % mayor", "Un 2 % menor"],
+      "answer": 1,
+      "explanation": "0,8 × 1,2 = 0,96 → un 4 % menor.",
+      "difficulty": 2,
+      "tags": ["porcentajes"]
+    },
+    {
+      "question": "Las ventas pasan de 250 a 300 unidades. ¿Cuál es el crecimiento porcentual?",
+      "options": ["15 %", "16,7 %", "20 %", "50 %"],
+      "answer": 2,
+      "explanation": "(300 − 250) / 250 = 0,20 → 20 %.",
+      "difficulty": 1,
+      "tags": ["porcentajes", "variación"]
+    },
+    {
+      "question": "Un equipo de 4 personas tarda 6 días en un trabajo. Al mismo ritmo, ¿cuántos días tardarían 3 personas?",
+      "options": ["4,5", "7", "8", "9"],
+      "answer": 2,
+      "explanation": "Proporción inversa: 4 × 6 = 24 días-persona → 24 / 3 = 8 días.",
+      "difficulty": 2,
+      "tags": ["proporción inversa"]
+    }
+  ]
+}

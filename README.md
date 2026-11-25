@@ -1,5 +1,11 @@
 # Tailor-test · Tests a medida
 
+[![CI](https://github.com/Crustaxis/Exam_producer/actions/workflows/ci.yml/badge.svg)](https://github.com/Crustaxis/Exam_producer/actions/workflows/ci.yml)
+[![Licencia MIT](https://img.shields.io/badge/licencia-MIT-green.svg)](LICENSE)
+[![good first issues](https://img.shields.io/github/issues/Crustaxis/Exam_producer/good%20first%20issue?label=good%20first%20issues&color=7057ff)](https://github.com/Crustaxis/Exam_producer/labels/good%20first%20issue)
+
+**▶️ Pruébala ya: [crustaxis.github.io/Exam_producer](https://crustaxis.github.io/Exam_producer/)** — sin registro, desde el móvil o el ordenador.
+
 **Tailor-test** es una app web libre y gratuita para preparar exámenes tipo test de cualquier materia:
 razonamiento verbal, numérico y abstracto, temarios de oposiciones, asignaturas, certificaciones…
 Se instala en el móvil como una app (PWA), funciona sin conexión y **no necesita registro**: tus datos se
@@ -8,7 +14,7 @@ quedan en tu dispositivo.
 > 🇬🇧 *Tailor-test is a free, open-source, installable web app (PWA) to practise multiple-choice exams on any
 > subject. Organise projects and topics, add questions by hand, import them, or generate them with any AI chat,
 > and take timed mock exams with custom scoring. Data stays on your device. UI currently in Spanish; contributions
-> welcome.*
+> welcome — see [How to contribute](#contribuir--contributing) below.*
 
 ## Qué puedes hacer
 
@@ -42,6 +48,31 @@ Documentación técnica:
 - [Formato de preguntas (JSON)](docs/FORMATO-PREGUNTAS.md)
 - [Hoja de ruta](docs/ROADMAP.md)
 - [Cómo contribuir](CONTRIBUTING.md)
+
+## Contribuir · Contributing
+
+**Se buscan manos**, programes o no. Cualquiera puede proponer cambios con un *fork* y un *pull request*, sin
+pedir permiso: la [guía de contribución](CONTRIBUTING.md) lo explica paso a paso, también desde el navegador.
+
+| Si sabes… | Puedes… | Empieza aquí |
+|---|---|---|
+| Programar (React/TypeScript) | Arreglar errores y añadir funciones | [`good first issue`](https://github.com/Crustaxis/Exam_producer/labels/good%20first%20issue) |
+| Una materia de examen | Escribir un banco de preguntas originales | [`bancos/`](bancos/README.md) |
+| Otro idioma | Traducir la interfaz o la documentación | [`sin código`](https://github.com/Crustaxis/Exam_producer/labels/sin%20c%C3%B3digo) |
+| Usar la app | Contar errores o ideas | [Abrir un issue](https://github.com/Crustaxis/Exam_producer/issues/new/choose) |
+
+> 🇬🇧 *Anyone can contribute via fork + pull request, no invitation needed. Code identifiers are in English;
+> UI and docs are in Spanish. Issues and PRs in English are welcome. Start with a
+> [good first issue](https://github.com/Crustaxis/Exam_producer/labels/good%20first%20issue).*
+
+### Contribuidores
+
+¡Gracias a todas las personas que han aportado!
+
+- [@Crustaxis](https://github.com/Crustaxis) — autor
+- [@jjosec16](https://github.com/jjosec16) — tiempo real en los resultados ([#1](https://github.com/Crustaxis/Exam_producer/pull/1))
+
+<!-- Al fusionar un PR de alguien nuevo, añade su línea aquí. -->
 
 ## Licencia
 

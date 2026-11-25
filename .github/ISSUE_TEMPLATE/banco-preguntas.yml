@@ -1,0 +1,23 @@
+name: 📚 Banco de preguntas
+description: Propón o pide un banco de preguntas originales para la carpeta bancos/
+labels: [sin código]
+body:
+  - type: input
+    id: materia
+    attributes:
+      label: Materia o examen
+      placeholder: p. ej. razonamiento numérico, Constitución española, inglés B2…
+    validations:
+      required: true
+  - type: textarea
+    id: detalle
+    attributes:
+      label: Detalles
+      description: Nivel, número aproximado de preguntas, si las vas a escribir tú…
+  - type: checkboxes
+    id: originales
+    attributes:
+      label: Derechos
+      options:
+        - label: Las preguntas son originales (no copiadas de academias, libros ni exámenes protegidos)
+          required: true
