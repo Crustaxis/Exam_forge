@@ -56,7 +56,7 @@ Documentación técnica:
 ## Contribuir · Contributing
 
 **Se buscan manos**, programes o no. ¿Es tu primera vez? Sigue la
-**[guía de tu primera contribución en 10 minutos](docs/PRIMERA-CONTRIBUCION.md)**: sin instalar nada.
+**[guía de tu primera contribución en 5 minutos](docs/PRIMERA-CONTRIBUCION.md)**: sin instalar nada.
 
  Cualquiera puede proponer cambios con un *fork* y un *pull request*, sin
 pedir permiso: la [guía de contribución](CONTRIBUTING.md) lo explica paso a paso, también desde el navegador.

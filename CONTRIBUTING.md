@@ -7,7 +7,7 @@ puede proponer cambios con un *fork* y un *pull request* (PR).
 > 🇬🇧 English speakers: see [CONTRIBUTING.en.md](CONTRIBUTING.en.md) if it exists, or just open an issue in
 > English — it's welcome.
 
-> 🐣 ¿Primera vez en GitHub? Empieza por la [guía rápida de 10 minutos](docs/PRIMERA-CONTRIBUCION.md).
+> 🐣 ¿Primera vez en GitHub? Empieza por la [guía rápida de 5 minutos](docs/PRIMERA-CONTRIBUCION.md).
 
 ## ¿Por dónde empiezo?
 
