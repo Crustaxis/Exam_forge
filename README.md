@@ -4,6 +4,8 @@
 [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-green.svg)](LICENSE)
 [![good first issues](https://img.shields.io/github/issues/Crustaxis/Exam_producer/good%20first%20issue?label=good%20first%20issues&color=7057ff)](https://github.com/Crustaxis/Exam_producer/labels/good%20first%20issue)
 
+<p align="center"><img src="docs/img/demo.gif" alt="Demo de Tailor-test: proyecto de ejemplo, examen y resultados" width="300"></p>
+
 **▶️ Pruébala ya: [crustaxis.github.io/Exam_producer](https://crustaxis.github.io/Exam_producer/)** — sin registro, desde el móvil o el ordenador.
 
 **Tailor-test** es una app web libre y gratuita para preparar exámenes tipo test de cualquier materia:
@@ -17,6 +19,8 @@ quedan en tu dispositivo.
 > welcome — see [How to contribute](#contribuir--contributing) below.*
 
 ## Qué puedes hacer
+
+![Capturas: inicio, proyecto, examen y resultados](docs/img/capturas.png)
 
 - **Proyectos**: uno por cada examen u oposición que prepares.
 - **Temas** dentro de cada proyecto, con su material de estudio (apuntes, temario) y su banco de preguntas.
@@ -51,7 +55,10 @@ Documentación técnica:
 
 ## Contribuir · Contributing
 
-**Se buscan manos**, programes o no. Cualquiera puede proponer cambios con un *fork* y un *pull request*, sin
+**Se buscan manos**, programes o no. ¿Es tu primera vez? Sigue la
+**[guía de tu primera contribución en 10 minutos](docs/PRIMERA-CONTRIBUCION.md)**: sin instalar nada.
+
+ Cualquiera puede proponer cambios con un *fork* y un *pull request*, sin
 pedir permiso: la [guía de contribución](CONTRIBUTING.md) lo explica paso a paso, también desde el navegador.
 
 | Si sabes… | Puedes… | Empieza aquí |
