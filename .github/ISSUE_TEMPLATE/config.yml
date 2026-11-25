@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Preguntas y charla
+    url: https://github.com/Crustaxis/Exam_producer/discussions
+    about: Dudas sobre cómo usar la app o cómo contribuir

@@ -1,0 +1,21 @@
+name: 💡 Idea o mejora
+description: Propón una función nueva o un cambio
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué problema resuelve?
+      description: Cuéntalo desde el punto de vista de quien prepara un examen.
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: ¿Cómo te imaginas la solución?
+  - type: checkboxes
+    id: ayuda
+    attributes:
+      label: ¿Te animas a hacerlo tú?
+      options:
+        - label: Sí, me gustaría intentarlo (te ayudamos con la revisión)
